@@ -1,0 +1,32 @@
+.man-cat {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+#customCategorys {
+  color: black;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0px 0px 4px;
+  width: 400px;
+  font-size: 14px;
+}
+
+.dropdown {
+  background-color: #bab1b1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0px 0px 4px;
+  width: 400px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.dropdown-content {
+  font-size: 16px;
+}

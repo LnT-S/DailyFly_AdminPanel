@@ -1,0 +1,54 @@
+.User-Box {
+  display: flex;
+  flex-direction: row;
+  background-color: #21055094;
+  border: 1px solid #c73eff;
+  width: 70vw;
+  margin: 10px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  color: #ccccccb5;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.subtext {
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #6426cd;
+  padding: 5px;
+  margin: 5px;
+}
+.btn-container {
+  margin: 5px;
+}
+.serach-button {
+  background-image: linear-gradient(45deg, #6426cd, #c73eff);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  margin: 4px;
+}
+.serach-bar {
+  background-color: #bab1b1;
+  padding: 10px;
+  width: 200px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}

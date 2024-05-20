@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Screen from "./container/screen/Screen.js";
+import Login from "./container/component/login/LogIn.js";
+import Uploadcategory from "./container/component/manageCategory/UploadCategory.js";
+import Managecategory from "./container/component/manageCategory/ManageCategory.js";
+import UploadImages from "./container/component/manageImages/UploadImages.js";
+import ManageImages from "./container/component/manageImages/ManageImages.js";
+import ManageUser from "./container/component/manageUser/ManageUser.js";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Screen>
+          <Routes>
+            <Route path="/" element={<Login/>} />
+            <Route path="/logIn" element={<Login/>} />
+            <Route path="/add-category" element={<Uploadcategory/>} />
+            <Route path="/manage-category" element={<Managecategory/>} />
+            <Route path="/upload-images" element={<UploadImages/>} />
+            <Route path="/manage-images" element={<ManageImages/>} />
+            <Route path="/manage-user" element={<ManageUser/>} />
+          </Routes>
+        </Screen>
+      </BrowserRouter>
   );
 }
 

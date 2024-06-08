@@ -298,7 +298,13 @@ const Screen = (props) => {
                 shared: 21,
                 createdAt: '2023-10 - 28T11:05: 10.144+00:00'
             },
-            
+
+        ],
+        level: [
+            'Level 0 - Viewer',
+            'Level 1 - Uploader',
+            'Level 2 - Editor',
+            'Level 3 - FullControl'
         ]
     }
 

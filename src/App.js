@@ -6,6 +6,7 @@ import Managecategory from "./container/component/manageCategory/ManageCategory.
 import UploadImages from "./container/component/manageImages/UploadImages.js";
 import ManageImages from "./container/component/manageImages/ManageImages.js";
 import ManageUser from "./container/component/manageUser/ManageUser.js";
+import AddNewAdmin from "./container/component/admin/CreateNewAdmin.js";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/upload-images" element={<UploadImages/>} />
             <Route path="/manage-images" element={<ManageImages/>} />
             <Route path="/manage-user" element={<ManageUser/>} />
+            <Route path="/new-admin" element={<AddNewAdmin/>} />
           </Routes>
         </Screen>
       </BrowserRouter>

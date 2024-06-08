@@ -11,20 +11,20 @@ const SideBar = () => {
     const handleClick = (link) => {
         setActiveLink(link);
     };
-    
+
     useEffect(() => {
         console.log(activeLink)
     }, [activeLink])
     return (
-        
-        <div className='side-container' 
-        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'column' }}>
 
-            <div className='layout-img-container' 
-            style={{
-                display: 'flex', flexDirection: 'row', justifyContent: 'center',
-                alignItems: 'center', marginTop: 10
-            }}>
+        <div className='side-container'
+            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'column' }}>
+
+            <div className='layout-img-container'
+                style={{
+                    display: 'flex', flexDirection: 'row', justifyContent: 'center',
+                    alignItems: 'center', marginTop: 10
+                }}>
                 <img src={Logo} alt='LOGO' className='logo' />
                 <div style={{ fontSize: 24, color: 'white', margin: 10, fontWeight: '600', fontFamily: 'sans-serif' }}>Admin Panel</div>
 
@@ -32,7 +32,7 @@ const SideBar = () => {
 
             <ul style={{ margin: 0, textDecoration: 'none', listStyle: 'none', padding: 0, width: '100%' }}
             >
-            {/*
+                {/*
                 <li id="home"
                     className={activeLink === 'home' ? 'active' : 'listItem'}
                     onClick={() => {
@@ -64,38 +64,39 @@ const SideBar = () => {
                     </ul>
                 )}
             */}
-            
-            <li className={activeLink === 'up-cat' ? 'active' : 'listItem'}
-            id="upload"
-            >
-            <Link className={activeLink === 'up-cat' ? 'active-link' : 'listItem-link'}
-            to="/add-category" onClick={() => handleClick('up-cat')}>
-            Upload Category
-            </Link></li>
-            
-            <li className={activeLink === 'man-cat' ? 'active' : 'listItem'} id="upload" >
-            <Link className={activeLink === 'man-cat' ? 'active-link' : 'listItem-link'} to="/manage-category" onClick={() => handleClick('man-cat')}>
-            Manage Category</Link></li>
-            
-            <li className={activeLink === 'up-img' ? 'active' : 'listItem'}
-                id="upload"
-                
-            ><Link className={activeLink === 'up-img' ? 'active-link' : 'listItem-link'} to="/upload-images" onClick={() => handleClick('up-img')}>
-                    Upload Images
-                </Link>
-            </li>
-            <li className={activeLink === 'man-img' ? 'active' : 'listItem'}
-                id="upload"
-                
-            ><Link className={activeLink === 'man-img' ? 'active-link' : 'listItem-link'} to="/manage-images" onClick={() => handleClick('man-img')}>
-                    Manage Images
-                </Link>
-            </li>
-            <li className={activeLink === 'mng-user' ? 'active' : 'listItem'} id="manage_user" >
-            <Link className={activeLink === 'mng-user' ? 'active-link' : 'listItem-link'} to="/manage-user" onClick={() => handleClick('mng-user')}>Manage Users</Link></li>
-                    
+
+                <li className={activeLink === 'up-cat' ? 'active' : 'listItem'}
+                    id="upload"
+                >
+                    <Link className={activeLink === 'up-cat' ? 'active-link' : 'listItem-link'}
+                        to="/add-category" onClick={() => handleClick('up-cat')}>
+                        Upload Category
+                    </Link></li>
+
+                <li className={activeLink === 'man-cat' ? 'active' : 'listItem'} id="upload" >
+                    <Link className={activeLink === 'man-cat' ? 'active-link' : 'listItem-link'} to="/manage-category" onClick={() => handleClick('man-cat')}>
+                        Manage Category</Link></li>
+
+                <li className={activeLink === 'up-img' ? 'active' : 'listItem'}
+                    id="upload"
+                ><Link className={activeLink === 'up-img' ? 'active-link' : 'listItem-link'} to="/upload-images" onClick={() => handleClick('up-img')}>
+                        Upload Images
+                    </Link>
+                </li>
+                <li className={activeLink === 'man-img' ? 'active' : 'listItem'}
+                    id="upload"
+                ><Link className={activeLink === 'man-img' ? 'active-link' : 'listItem-link'} to="/manage-images" onClick={() => handleClick('man-img')}>
+                        Manage Images
+                    </Link>
+                </li>
+                <li className={activeLink === 'mng-user' ? 'active' : 'listItem'} id="manage_user" >
+                    <Link className={activeLink === 'mng-user' ? 'active-link' : 'listItem-link'} to="/manage-user" onClick={() => handleClick('mng-user')}>Manage Users</Link></li>
+
                 <li className={activeLink === 'mng-admin' ? 'active' : 'listItem'} id="manage_admin" >
                     <Link className={activeLink === 'mng-admin' ? 'active-link' : 'listItem-link'} to="" onClick={() => handleClick('mng-admin')}>Manage Admin</Link></li>
+
+                <li className={activeLink === 'new-admin' ? 'active' : 'listItem'} id="new_admin" >
+                    <Link className={activeLink === 'new-admin' ? 'active-link' : 'listItem-link'} to="/new-admin" onClick={() => handleClick('new-admin')}>Create New Admin</Link></li>
             </ul>
 
             <div className='img-cont' style={{
